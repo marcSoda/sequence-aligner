@@ -1,0 +1,9 @@
+* To run the project, just run the binary with `./aligner <input_path> <output_path>`
+  - Note that there are example sequences in the `data` directory.
+  - If you do no specify an `input_path`, it will default to `data/ex0.fasta`
+  - If you do not specify an `output_path`, it will default to `data/out.aln`.
+* Compiling
+  - If the `aligner` binary is not in the top level directory of the project, you will have to recompile it.
+  - It should be there unless LU File Sender does something weird with executable binaries.
+  - You may use the `compile` bash script which will compile the project and moves the binary to the TLD.
+  - If that doesn't work for whatever reason, you can compile and run it by navigating to `src` and running `cargo run -- <input_path> <output_path>`. This will compile and run the executable with the specified infile and outfile.

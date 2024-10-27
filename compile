@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd src
+cargo build
+cp target/debug/aligner ..
+cd -
+
